@@ -8,6 +8,13 @@ function splitter(input){
     console.log(result.join(', '));
 }
 
-splitter('SplitMeIfYouCanHaHaYouCantOrYouCan')
-splitter('HoldTheDoor')
-splitter('ThisIsSoAnnoyingToDo')
+function solve(input){
+    let matches = input.matchAll(/[A-Z][a-z]*/g);
+    let words = Array.from(matches).map(match => match[0])
+
+    console.log(words.join(', '));
+}
+
+solve('SplitMeIfYouCanHaHaYouCantOrYouCan')
+solve('HoldTheDoor')
+solve('ThisIsSoAnnoyingToDo')
