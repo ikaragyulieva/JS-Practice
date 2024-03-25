@@ -7,7 +7,7 @@ function nxnMatrix(n){
         }
     }
 
-    matrix.forEach(v=>console.log(...v))
+    matrix.forEach(v => console.log(...v))
 }
 
 nxnMatrix(3)

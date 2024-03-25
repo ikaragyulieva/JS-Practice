@@ -24,5 +24,22 @@ function palindromeIntegers(array){
 
 }
 
-palindromeIntegers([123,323,421,121])
-palindromeIntegers([32,2,232,1010])
+// 2nd solution
+
+function solve(nums){
+    nums.forEach(printPalindromeResult)
+}
+
+function isPalindrom(number){
+    const forwardNum = number.toString();
+    const backwardsNum = forwardNum.split('').reverse().join('');
+     
+    return forwardNum === backwardsNum
+}
+
+function printPalindromeResult(number){
+    console.log(isPalindrom(number));    
+}
+
+solve([123,323,421,121])
+solve([32,2,232,1010])
